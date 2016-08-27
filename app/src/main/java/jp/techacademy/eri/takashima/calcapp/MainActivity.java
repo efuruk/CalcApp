@@ -2,6 +2,7 @@ package jp.techacademy.eri.takashima.calcapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -26,15 +27,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText editText1 = (EditText) findViewById(R.id.editText1);
+                editText1.setInputType(InputType.TYPE_CLASS_NUMBER);
                 EditText editText2 = (EditText) findViewById(R.id.editText2);
+                editText2.setInputType(InputType.TYPE_CLASS_NUMBER);
 
                 String VALUE1 = editText1.getText().toString();
                 String VALUE2 = editText2.getText().toString();
                 Double A = Double.parseDouble(VALUE1);
                 Double B = Double.parseDouble(VALUE2);
-                Double C = A + B;
+                Double result = A + B;
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                intent.putExtra("VALUEC", C);
+                intent.putExtra("VALUEC", result);
                 startActivity(intent);
             }
         });
@@ -43,15 +46,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText editText1 = (EditText) findViewById(R.id.editText1);
+                editText1.setInputType(InputType.TYPE_CLASS_NUMBER);
                 EditText editText2 = (EditText) findViewById(R.id.editText2);
+                editText2.setInputType(InputType.TYPE_CLASS_NUMBER);
 
                 String VALUE1 = editText1.getText().toString();
                 String VALUE2 = editText2.getText().toString();
                 Double A = Double.parseDouble(VALUE1);
                 Double B = Double.parseDouble(VALUE2);
-                Double C = A - B;
+                Double result = A - B;
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                intent.putExtra("VALUEC", C);
+                intent.putExtra("VALUEC", result);
                 startActivity(intent);
             }
         });
@@ -60,15 +65,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText editText1 = (EditText) findViewById(R.id.editText1);
+                editText1.setInputType(InputType.TYPE_CLASS_NUMBER);
                 EditText editText2 = (EditText) findViewById(R.id.editText2);
+                editText2.setInputType(InputType.TYPE_CLASS_NUMBER);
 
                 String VALUE1 = editText1.getText().toString();
                 String VALUE2 = editText2.getText().toString();
                 Double A = Double.parseDouble(VALUE1);
                 Double B = Double.parseDouble(VALUE2);
-                Double C = A*B;
+                Double result = A*B;
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                intent.putExtra("VALUEC", C);
+                intent.putExtra("VALUEC", result);
                 startActivity(intent);
             }
         });
@@ -77,15 +84,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText editText1 = (EditText) findViewById(R.id.editText1);
+                editText1.setInputType(InputType.TYPE_CLASS_NUMBER);
                 EditText editText2 = (EditText) findViewById(R.id.editText2);
+                editText2.setInputType(InputType.TYPE_CLASS_NUMBER);
 
                 String VALUE1 = editText1.getText().toString();
                 String VALUE2 = editText2.getText().toString();
                 Double A = Double.parseDouble(VALUE1);
                 Double B = Double.parseDouble(VALUE2);
-                Double C = A/B;
+                Double result = A/B;
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                intent.putExtra("VALUEC", C);
+                intent.putExtra("VALUEC", result);
                 startActivity(intent);
             }
         });
