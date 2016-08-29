@@ -34,17 +34,25 @@
         android:text="÷"
         android:id="@+id/button4"/>
 
+
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText1"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal"
+        android:hint="数値を入力"/>
+
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText2"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal"
+        android:hint="数値を入力"/>
+
+
+
 
 
 
